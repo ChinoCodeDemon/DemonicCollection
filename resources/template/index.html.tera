@@ -11,13 +11,13 @@
             let repos = JSON.parse(document.getElementById("repos-data").innerText);
             console.log(repos)
             let headers = []
-            
+
             for(let element of repos){
                 let tr = document.createElement("tr")
                 repo_table.appendChild(tr)
                 for(let key in element){
                     let td = document.createElement("td")
-                    td.innerText = element[key];
+                    td.innerHTML = element[key].replace(/(?:(https?\:\/\/[^\s]+))/m, '<a href="$1">$1</a>');
                     headers.push(key)
                     tr.appendChild(td)
                 }
