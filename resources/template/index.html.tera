@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">#
     <script defer>
         window.addEventListener("DOMContentLoaded", (window, event)=>{
             let repo_table = document.getElementById("repo-table");
@@ -30,7 +31,7 @@
             for(let head of headers){
                 console.log(head)
                 let th = document.createElement("th")
-                th.innerText = head
+                th.innerText = head[0].toUpperCase() + head.substring(1)
                 tr.appendChild(th)
             }
         })

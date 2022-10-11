@@ -20,6 +20,7 @@ fn index() -> Template {
 fn rocket() -> _ {
     rocket::build()
         .mount("/", rocket::routes![index, repo_list])
+        .mount("/static", rocket::fs::FileServer::from(concat!(env!("CARGO_MANIFEST_DIR"),"/resources/static")))
         .attach(Template::fairing())
 }
 
