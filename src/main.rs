@@ -1,6 +1,6 @@
 use std::fs::File;
-use std::io::{self, BufRead, Split};
-use std::path::{Path, self};
+use std::io::{self, BufRead};
+use std::path::{Path};
 use rocket_dyn_templates::{Template, context};
 use rocket::http::{Status, ContentType};
 
