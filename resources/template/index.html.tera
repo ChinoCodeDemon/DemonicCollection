@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="static/style.css">#
+    <link rel="stylesheet" href="static/style.css">
     <script defer>
         window.addEventListener("DOMContentLoaded", (window, event)=>{
             let repo_table = document.getElementById("repo-table");
@@ -38,9 +38,11 @@
     </script>
 </head>
 <body>
-    <span id="repos-data" style="display: none">{{repos}}</span>
     <main>
-        <table id="repo-table">
+    <h1>Welcome to the Demonic Collection</h1>
+    <p>This are a few projects that I am proud of, just visit the repos and read the descriptions to get infos on what they actually are about.</p>
+    <span id="repos-data" style="display: none">{{repos}}</span>
+        <table id="repo-table" >
             <!-- Insert list here -->
         </table> 
     </main>
